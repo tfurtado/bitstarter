@@ -4,92 +4,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Bitstarter</title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet" type="text/css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="//d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet" type="text/css">
     <style type="text/css">
-      /* Large desktop */
-      @media (min-width: 980px) {
+    /* Large desktop */
+    @media (min-width: 980px) {
       body {
-      padding-top: 60px;
+        padding-top: 60px;
       }
       .linediv-l {
-      border-right: 1px white solid;
+       border-right: 1px white solid;
       }
       .linediv-r {
-      border-left: 1px white solid;
+        border-left: 1px white solid;
       }
-      }
+    }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) {
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
       .copy {
-      padding: 2.5% 10%;
+        padding: 2.5% 10%;
       }
       .linediv-l {
-      border-bottom: 1px white solid;
+        border-bottom: 1px white solid;
       }
       .linediv-r {
-      border-top: 1px white solid;
+        border-top: 1px white solid;
       }
-      }
+    }
 
-      /* All form factors */
-      body {
+    /* All form factors */
+    body {
       font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
+    }
+    .heading, .subheading {
       font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
       text-align: center;
-      }
-      p.lead {
+    }
+    p.lead {
       padding-top: 1.5%;
       font-size: 24px;
       line-height: 30px;
-      }
-      p {
+    }
+    p {
       font-size: 18px;
       line-height: 24px;
-      }
+    }
 
-      /* Video pitch and Action */
-      .pitch {
+    /* Video pitch and Action */
+    .pitch {
       padding: 2.5% 0;
-      }
-      .order {
+    }
+    .order {
       padding: 2% 0;
-      }
-      .actions {
+    }
+    .actions {
       background-color: #343434;
-      padding: 3% 0;
-      }
-      .video, .thermometer, .order, .social, .statistics {
+    padding: 3% 0;
+    }
+    .video, .thermometer, .order, .social, .statistics {
       text-align: center;
-      }
-      .statistics h3, .statistics p {
+    }
+    .statistics h3, .statistics p {
       color: white;
-      }
+    }
 
-      /* Marketing Copy and Footer */
-      .copy {
+    /* Marketing Copy and Footer */
+    .copy {
       padding-top: 2.5%;
       padding-bottom: 2.5%;
       text-align: justify;
-      }
-      .asset {
+    }
+    .copy ul {
+      list-style: square;
+    }
+    .asset {
       padding: 2.5% 0;
-      }
-      .footer {
+    }
+    .footer {
       color: #ccc;
       text-align: center;
-      }
-      .footer p {
+    }
+    .footer p {
       font-size: 11px;
-      }
-      .footer a {
+    }
+    .footer a {
       color: #ccf;
-      }
+    }
     </style>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -126,14 +129,14 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Product</h1>
+	  <h1>Plutus</h1>
 	</div>
       </div>
       <div class="row-fluid subheading">
 	<div class="span12">
 	  <!-- Special typography from Bootstrap for lead paragraph. -->
 	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">One sentence description.</p>
+	  <p class="lead">Expense tracking made easy!</p>
 	</div>
       </div>
       <div class="row-fluid pitch">
@@ -143,24 +146,24 @@
 
 	<!-- We define a new 'actions' div to contain statistics, order and share buttons -->
 	<div class="span5 actions">
-	  <div class="span8 offset2">
+	  <div class="span10 offset1">
 	    <div class="statistics">
 	      <div class="span4">
 		<!-- lidediv-l and linediv-r give dividing lines that look
 		     different in horizontal and vertical layouts, illustrating
 		     media queries. -->
 		<div class="linediv-l">
-		  <h3>1000</h3> <p>backers</p>
+		  <h3>0</h3> <p>backers</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-c">
-		  <h3>$6000</h3> <p>of $10,000</p>
+		  <h3>$0</h3> <p>of $3,000</p>
 		</div>
 	      </div>
 	      <div class="span4">
 		<div class="linediv-r">
-		  <h3>10</h3> <p>days left</p>
+		  <h3>30</h3> <p>days left</p>
 		</div>
 	      </div>
 	    </div>
@@ -169,8 +172,8 @@
 	    <!-- Bootstrap progress bar -->
 	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
 	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 60%;"></div>
-	      <div class="bar bar-warning" style="width: 40%;"></div>
+	      <div class="bar bar-success" style="width: 0%;"></div>
+	      <div class="bar bar-warning" style="width: 100%;"></div>
 	    </div>
 	  </div>
 	  <div class="span6 offset3 order">
@@ -196,35 +199,18 @@
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
 	<div class="span5 copy">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-	    elit. Ut vitae venenatis tortor. Integer a molestie
-	    lectus, id venenatis metus. Morbi elit dolor, tincidunt a
-	    tempus ullamcorper, malesuada quis sapien. Donec ac
-	    fringilla odio, non ultricies odio. Aenean vel enim non
-	    mauris porttitor congue convallis eu metus. Curabitur
-	    suscipit felis dui, mollis congue neque dignissim
-	    commodo. Vestibulum ante ipsum primis in faucibus orci
-	    luctus et ultrices posuere cubilia Curae; In eget tempus
-	    neque. Donec venenatis turpis in nisi iaculis
-	    luctus. Pellentesque suscipit nibh et ipsum mattis
-	    luctus. In hac habitasse platea dictumst. Praesent sed mi
-	    sed orci ultrices ullamcorper vel mollis nisl. Maecenas
-	    pellentesque velit eu elit sagittis porttitor. Mauris in
-	    ultricies eros. Donec venenatis tellus sit amet tortor
-	    pellentesque vestibulum.</p>
+	  <p>Handy tool to store and keep track of personal expenses.</p>
 	</div>
       </div>
 
       <div class="row-fluid section2">
 	<div class="span5 offset1 copy copy-right">
-	  <p>Praesent ut porta erat. Maecenas at nisi mollis ante
-	    semper mollis vel eu diam. Curabitur sit amet sapien non
-	    tortor euismod pharetra. Maecenas at neque quis nisl
-	    laoreet mattis. Mauris et fringilla metus. Mauris posuere
-	    vestibulum ultricies. Praesent a accumsan massa. Fusce sem
-	    elit, faucibus quis suscipit a, porttitor sit amet
-	    quam. Nam convallis magna a leo porta, nec molestie diam
-	    blandit.</p>
+	  <ul>
+	    <li>Use your camera to capture bills and track your expenses.</li>
+	    <li>Set expending goals and share it with who you like and keep yourself motivated.</li>
+	    <li>Celebrate when your budget stays under control and you achieve those goals.</li>
+	    <li><b>Put your money under your control!</b></li>
+	  </ul>
 	</div>
 	<div class="span5 asset">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
@@ -241,23 +227,25 @@
 	    <div class="accordion-group">
 	      <div class="accordion-heading">
 		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		  What does FAQ stand for?
+		  Why an expense manager?
 		</a>
 	      </div>
 	      <div id="collapseOne" class="accordion-body collapse">
 		<div class="accordion-inner">
-		  Frequently Asked Question.
+		  Because you can't control what you don't
+		  know. Tracking your expenses is the first step
+		  towards putting your financial life under control.
 		</div>
 	      </div>
 	      <div class="accordion-group">
 		<div class="accordion-heading">
 		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		    What's a Frequently Asked Question?
+
 		  </a>
 		</div>
 		<div id="collapseTwo" class="accordion-body collapse">
 		  <div class="accordion-inner">
-		    A question which is commonly asked by users.
+
 		  </div>
 		</div>
 	      </div>
